@@ -1,3 +1,6 @@
+import org.junit.internal.TextListener;
+import org.junit.runner.JUnitCore;
+
 public class Main {
     
     /**
@@ -12,6 +15,15 @@ public class Main {
         // spezifischen Reimen (es ist nicht garantiert, dass immer die 
         // selbe Anzahl Tiere gewünscht ist).
 
+        singSong();
+        
+        
+        //JUnitCore junit = new JUnitCore();
+        //junit.addListener(new TextListener(System.out));
+        //junit.run(SongTest.class);
+    }
+    
+    public static void singSong(){
         String song = "There was an old lady who swallowed a fly.\n" +
                 "I don't know why she swallowed a fly - perhaps she'll die!\n" +
                 "\n" +
@@ -44,7 +56,6 @@ public class Main {
                 "There was an old lady who swallowed a horse...\n" +
                 "...She's dead, of course!";
 
-                System.out.println(song);
+        System.out.println(song);
     }
-    
 }
